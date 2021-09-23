@@ -61,7 +61,7 @@ T_ST_P_No_TRASNPMOB <- read_csv("data/TEMA_SUBTEMA_P_No - TRASNPORTEMOBILIDADE.c
 ## Arquivo de saida 
 
 SAIDA_POVOAMENTO <- T_ST_P_No_TRASNPMOB %>% 
-  select(TEMA,SUBTEMA,PERGUNTA,CODIGO)
+  select(TEMA,SUBTEMA,PERGUNTA,NOME_ARQUIVO_JS)
 SAIDA_POVOAMENTO <- as.data.frame(SAIDA_POVOAMENTO)
 
 classes <- NULL
@@ -114,9 +114,9 @@ for ( i in 1:length(classes)) {
   texto<-noquote(texto)
   
   
-  write(exportJson0,file = paste('data/',gsub('.js','',T_ST_P_No_TRASNPMOB$`NOME ARQUIVO JS`[i]),
+  write(exportJson0,file = paste('data/',gsub('.csv','',T_ST_P_No_TRASNPMOB$NOME_ARQUIVO_JS[i]),
                                  '.json',sep =''))
-  write(texto,file = paste('data/',T_ST_P_No_TRASNPMOB$`NOME ARQUIVO JS`[i],
+  write(texto,file = paste('data/',T_ST_P_No_TRASNPMOB$NOME_ARQUIVO_JS[i],
                            sep =''))
   
 }
