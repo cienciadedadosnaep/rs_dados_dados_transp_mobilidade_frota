@@ -4,28 +4,3 @@
 "Transporte e Mobilidade";"Frota";"Qual é o número de micro-ônibus e ônibus em Salvador?";"qt3.csv"
 "Transporte e Mobilidade";"Frota";"Qual é o número de caminhões e caminhonetas em Salvador?";"qt4.csv"
 "Transporte e Mobilidade";"Frota";"Qual é o número de veículos totais em Salvador?";"qt5.csv"
-NA;NA;NA;NA
-NA;NA;NA;NA
-NA;NA;NA;NA
-NA;NA;NA;NA
-NA;NA;NA;NA
-"Transporte e Mobilidade";"Multas";"Qual o número total de multas notificadas em Salvador?";"qt1.csv"
-"Transporte e Mobilidade";"Multas";"Qual a porcentagem de multas notificadas para cada tipo de veículo?";"qt2.csv"
-"Transporte e Mobilidade";"Multas";"Qual a porcentagem de multas notificadas por tipo de equipamento?";"qt3.csv"
-NA;NA;NA;NA
-"Transporte e Mobilidade";"Acidentes";"Qual o número de acidentes com feridos em Salvador?";"qt1.csv"
-"Transporte e Mobilidade";"Acidentes";"Qual o número de acidentes com mortos em Salvador?";"qt2.csv"
-"Transporte e Mobilidade";"Acidentes";"Qual o número de acidentes por tipo em Salvador?";"qt3.csv"
-NA;NA;NA;NA
-"Transporte e Mobilidade";"Lei Seca";"Qual o número de abordagens da Lei Seca feitas mensalmente?";"qt1.csv"
-"Transporte e Mobilidade";"Lei Seca";"Qual o número de infrações da Lei Seca feitas mensalmente?";"qt2.csv"
-"Transporte e Mobilidade";"Lei Seca";"Qual o número de CNHs apreendidas na Lei Seca mensalmente?";"qt3.csv"
-"Transporte e Mobilidade";"Lei Seca";"Qual o número de outras infrações registradas mensalmente na Lei Seca?";"qt4.csv"
-NA;NA;NA;NA
-"Transporte e Mobilidade";"Frota";"Qual é o número de automóveis em Salvador?";"numero_automoveis.csv"
-"Transporte e Mobilidade";"Frota";"Qual é o número de caminhões em Salvador?";"numero_caminhoes.csv"
-"Transporte e Mobilidade";"Frota";"Qual é o número de caminhonetas em Salvador?";"numero_caminhonetas.csv"
-"Transporte e Mobilidade";"Frota";"Qual é o número de micro-ônibus em Salvador?";"numero_micro-onibus.csv"
-"Transporte e Mobilidade";"Frota";"Qual é o número de motocicletas em Salvador?";"numero_motocicletas.csv"
-"Transporte e Mobilidade";"Frota";"Qual é o número de ônibus em Salvador?";"numero_onibus.csv"
-"Transporte e Mobilidade";"Frota";"Qual  é o número de veículos totais em Salvador?";"numero_total.csv"
