@@ -82,7 +82,7 @@ simbolo_linhas <- c('emptyCircle','emptyTriangle','emptySquare',
                     'emptyDiamond','emptyRoundRect')
 
 #for ( i in 1:length(classes)) {
-
+dados %<>% mutate(`Motocicletas`=`Motocicletas`/1000) #Reorganizando a escala dos dados
 objeto_0 <- dados %>%
   #filter(classe %in% c(classes[1])) %>%
   select(`Ano`,`Motocicletas`) %>% #filter(ano<2019) %>%
@@ -118,7 +118,7 @@ texto<-paste('{"title":{"text":"',titulo,
              '"dataView":{"readOnly":false},',
              '"restore":{},"saveAsImage":{}}},"legend":{"show":true,"top":"bottom"},"xAxis":{"type":"category",',
              '"data":',data_axis,'},',
-             '"yAxis":{"type":"value","axisLabel":{"formatter":"{value}"}},',
+             '"yAxis":{"type":"value","axisLabel":{"formatter":"{value}mil"}},',
              '"series":[{"name":"',nomes[6],'","data":',data_serie,',',
              '"type":"bar","color":"',corsec_recossa_azul[4],'","showBackground":true,',
              '"backgroundStyle":{"color":"rgba(180, 180, 180, 0.2)"},"symbol":"',simbolo_linhas[1],
