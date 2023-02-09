@@ -47,7 +47,7 @@ library(readxl)
 dados <- read_excel("data/Frota.xlsx")
 names(dados)
 nomes <- names(dados)
-
+#dados %<>% mutate(`Total`=`Total`/1000) 
 
 
 ##  Perguntas e titulos 
@@ -116,7 +116,7 @@ texto<-paste('{"title":{"text":"',titulo,
              '"toolbox":{"left":"center","orient":"horizontal","itemSize":20,"top":20,"show":true,',
              '"feature":{"dataZoom":{"yAxisIndex":"none"},',
              '"dataView":{"readOnly":false},',
-             '"restore":{},"saveAsImage":{}}},"legend":{"show":true,"top":"bottom"},"xAxis":{"type":"category",',
+             '"restore":{},"saveAsImage":{}}},"legend":{"show":true,"top":"bottom"},"grid":{"left":63,"right":63},"xAxis":{"type":"category",',
              '"data":',data_axis,'},',
              '"yAxis":{"type":"value","axisLabel":{"formatter":"{value}"}},',
              '"series":[{"name":"',nomes[8],'","data":',data_serie,',',
