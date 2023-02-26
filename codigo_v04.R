@@ -47,6 +47,7 @@ library(readxl)
 dados <- read_excel("data/Frota.xlsx")
 names(dados)
 nomes <- names(dados)
+dados %<>% mutate(`Total`=round(`Total`/1000))
 #dados %<>% mutate(`Total`=`Total`/1000) 
 
 
@@ -112,13 +113,13 @@ data_serie <- paste('[',gsub(' ',',',
 texto<-paste('{"title":{"text":"',titulo,
              '","subtext":"',subtexto,
              '","sublink":"',link,'"},',
-             '"tooltip":{"trigger":"axis"},',
+             '"tooltip":{"trigger":"item","responsive":"true","position":"top","formatter":"{c0} mil"},',
              '"toolbox":{"left":"center","orient":"horizontal","itemSize":20,"top":20,"show":true,',
              '"feature":{"dataZoom":{"yAxisIndex":"none"},',
              '"dataView":{"readOnly":false},',
              '"restore":{},"saveAsImage":{}}},"legend":{"show":true,"top":"bottom"},"grid":{"left":100,"right":100},"xAxis":{"type":"category",',
              '"data":',data_axis,'},',
-             '"yAxis":{"type":"value","axisLabel":{"formatter":"{value}"}},',
+             '"yAxis":{"type":"value","axisLabel":{"formatter":"{value}mil"},"max":950},',
              '"series":[{"name":"',nomes[8],'","data":',data_serie,',',
              '"type":"bar","color":"',corsec_recossa_azul[4],'","showBackground":true,',
              '"backgroundStyle":{"color":"rgba(180, 180, 180, 0.2)"},"symbol":"',simbolo_linhas[1],
