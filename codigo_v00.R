@@ -82,7 +82,7 @@ simbolo_linhas <- c('emptyCircle','emptyTriangle','emptySquare',
                     'emptyDiamond','emptyRoundRect')
 
 #for ( i in 1:length(classes)) {
-dados %<>% mutate(`Motocicletas`=`Motocicletas`/1000) #Reorganizando a escala dos dados
+dados %<>% mutate(`Motocicletas`=round(`Motocicletas`/1000)) #Reorganizando a escala dos dados
 objeto_0 <- dados %>%
   #filter(classe %in% c(classes[1])) %>%
   select(`Ano`,`Motocicletas`) %>% #filter(ano<2019) %>%
@@ -112,7 +112,7 @@ data_serie <- paste('[',gsub(' ',',',
 texto<-paste('{"title":{"text":"',titulo,
              '","subtext":"',subtexto,
              '","sublink":"',link,'"},',
-             '"tooltip":{"trigger":"axis"},',
+             '"tooltip":{"trigger":"item","responsive":"true","position":"top","formatter":"{c0} mil"},',
              '"toolbox":{"left":"center","orient":"horizontal","itemSize":20,"top":20,"show":true,',
              '"feature":{"dataZoom":{"yAxisIndex":"none"},',
              '"dataView":{"readOnly":false},',
